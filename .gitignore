@@ -1,0 +1,12 @@
+
+# File hasil kompilasi Java
+*.class
+out/
+target/
+
+# Konfigurasi IDE
+.idea/
+
+# File sistem operasi
+.DS_Store
+Thumbs.db
