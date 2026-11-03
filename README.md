@@ -1,74 +1,122 @@
-
 # Tugas 2 Praktikum Pemrograman Berorientasi Objek
 
 ## Identitas Mahasiswa
-- **Nama:** Zahra Febi Maharani
-- **NPM:** 250810701100006
-- **Mata Kuliah:** Praktikum Pemrograman Berorientasi Objek
 
-## Deskripsi
-Project ini berisi implementasi konsep Pemrograman Berorientasi Objek (PBO) menggunakan bahasa Java. Program dibagi menjadi empat soal yang membahas pewarisan, polimorfisme, komposisi objek, dan simulasi toko digital.
+- Nama: Zahra Febi Maharani
+- NPM:250810701100006
+- Mata Kuliah: Praktikum Pemrograman Berorientasi Objek
+
+## Deskripsi Project
+
+Project ini berisi implementasi konsep Pemrograman Berorientasi Objek (PBO) menggunakan bahasa Java. Project terdiri dari empat soal yang membahas hierarki kelas, inheritance, polymorphism, composition, defensive copy, serta simulasi toko digital.
 
 ## Daftar Soal
-1. **Soal 1 – Hierarki Perangkat Elektronik:** Implementasi kelas `Perangkat`, `Laptop`, `Ponsel`, dan `LaptopGaming`.
-2. **Soal 2 – Pewarisan dan Polimorfisme:** Pengujian kelas induk dan turunan, overriding method, serta contoh hubungan `Lingkaran` dan `Titik`.
-3. **Soal 3 – Titik dan Garis:** Implementasi hubungan objek titik dan garis serta konsep komposisi dan defensive copy.
-4. **Soal 4 – Toko Digital:** Implementasi produk fisik, produk digital, langganan, dan keranjang belanja.
 
-## Konsep PBO
+1. Soal 1 – Hierarki Perangkat Elektronik 
+   Implementasi kelas `Perangkat`, `Laptop`, `Ponsel`, dan `LaptopGaming` untuk menerapkan inheritance dan penggunaan method pada kelas turunan.
+
+2. Soal 2 – Pewarisan dan Polimorfisme 
+   Pengujian kelas induk dan kelas turunan, overriding method, serta contoh hubungan kelas `Lingkaran` dan `Titik`.
+
+3. Soal 3 – Titik dan Garis  
+   Implementasi hubungan objek titik dan garis menggunakan composition serta defensive copy.
+
+4. Soal 4 – Toko Digital
+   Implementasi kelas `Produk`, `ProdukFisik`, `ProdukDigital`, `Langganan`, dan `Keranjang` dengan inheritance, polymorphism, composition, serta exception handling.
+
+## Konsep Pemrograman Berorientasi Objek
+
 | Konsep | Penerapan |
 |---|---|
 | Class dan Object | Membuat kelas dan objek sesuai kebutuhan setiap soal. |
+| Encapsulation | Mengatur akses atribut menggunakan access modifier. |
 | Inheritance | Menggunakan kelas induk dan kelas turunan. |
-| Polymorphism | Menjalankan method yang di-override melalui referensi kelas induk. |
-| Encapsulation | Mengatur akses atribut dan method. |
-| Composition | Menghubungkan objek yang membentuk objek lain. |
-| Exception Handling | Menangani kondisi yang tidak valid jika diperlukan. |
+| Polymorphism | Memanggil method yang di-override melalui referensi kelas induk. |
+| Method Overriding | Mendefinisikan ulang method dari kelas induk pada kelas turunan. |
+| Composition | Menggunakan objek lain sebagai bagian dari suatu kelas. |
+| Defensive Copy | Melindungi data internal objek dari perubahan melalui salinan objek. |
+| Exception Handling | Menangani kondisi tidak valid menggunakan exception. |
 
 ## Struktur Project
+
 ```text
 Tugas2_Inherit-polymorph-250810701100006/
-├── src/
-│   ├── soal1/
-│   ├── soal2/
-│   ├── soal3/
-│   └── soal4/
 ├── .gitignore
-└── README.md
+├── README.md
+├── src/
+│   ├── Soal1/
+│   ├── Soal2/
+│   ├── Soal3/
+│   └── Soal4/
+└── out/ (hasil kompilasi, tidak disertakan di Git)
 ```
 
-## Kebutuhan
+## Kebutuhan Sistem
+
 - Java Development Kit (JDK)
 - Visual Studio Code atau IDE Java lainnya
 - Terminal atau Command Prompt
+- Git untuk pengelolaan repository
 
 ## Cara Menjalankan Program
 
-Jalankan perintah dari terminal di folder utama project.
+Jalankan perintah berikut melalui terminal pada folder utama project.
 
 ### Soal 1
+
 ```bash
-javac -d out src/soal1/*.java
+javac -d out src/Soal1/*.java
 java -cp out soal1.TesSoal1
 ```
 
 ### Soal 2
+
 ```bash
-javac -d out src/soal2/*.java
+javac -d out src/Soal2/*.java
 java -cp out soal2.TesSoal2
 ```
 
 ### Soal 3
-Petunjuk menjalankan program akan dilengkapi setelah implementasi Soal 3 selesai.
+
+```bash
+javac -d out src/Soal3/*.java
+java -cp out soal3.TesSoal3
+```
 
 ### Soal 4
-Petunjuk menjalankan program akan dilengkapi setelah implementasi Soal 4 selesai.
+
+```bash
+javac -d out src/Soal4/*.java
+java -cp out soal4.TesSoal4
+```
 
 ## Dokumentasi Pengujian
-Screenshot hasil kompilasi dan output setiap soal akan ditambahkan setelah seluruh program selesai diuji. Dokumentasi juga mencakup pengujian kondisi normal dan penanganan exception sesuai kebutuhan tugas.
 
-## Analisis Soal
-Analisis output, pewarisan, polimorfisme, komposisi, serta hasil pengujian akan dilengkapi setelah seluruh soal selesai dikerjakan.
+Dokumentasi pengujian berisi screenshot proses kompilasi dan hasil eksekusi program dari setiap soal.
+
+Screenshot yang disertakan meliputi:
+
+- Soal 1: hasil pengujian hierarki perangkat elektronik.
+- Soal 2: hasil pengujian inheritance dan polymorphism.
+- Soal 3: hasil pengujian titik, garis, dan defensive copy.
+- Soal 4: hasil struk belanja, perhitungan total, jumlah produk berdasarkan jenis, dan pengujian exception.
+
+## Analisis
+
+Berdasarkan implementasi keempat soal, konsep PBO dapat diterapkan untuk menyusun program menggunakan kelas dan objek.
+
+- Inheritance: memungkinkan kelas turunan mewarisi atribut dan method dari kelas induk.
+- Polymorphism: memungkinkan pemanggilan method yang sama menghasilkan perilaku berbeda sesuai objek yang digunakan.
+- Composition: memungkinkan sebuah kelas menggunakan dan mengelola objek dari kelas lain.
+- Defensive Copy: menjaga agar perubahan pada objek salinan tidak memengaruhi data internal objek asli.
+- Exception Handling: membantu menangani kondisi yang tidak valid sehingga program dapat memberikan pesan kesalahan yang sesuai.
+
+## Repository
+
+Repository GitHub project ini:
+
+https://github.com/febiwys/Tugas2_Inherit-polymorph-250810701100006
 
 ## Keterbatasan
-Project ini merupakan implementasi praktikum. Kelengkapan fitur, analisis, dan dokumentasi akan disesuaikan dengan instruksi tugas serta hasil pengujian program.
+
+Project ini merupakan implementasi praktikum untuk menerapkan konsep Pemrograman Berorientasi Objek menggunakan Java. Program dibuat berdasarkan kebutuhan masing-masing soal dan diuji melalui proses kompilasi serta eksekusi pada lingkungan pengembangan lokal.
